@@ -9,3 +9,9 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = "0.2"
+
+# The following line:
+# for Debian 10 on ARM
+#
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
