@@ -7,8 +7,12 @@ run:	$(FILES)
 $(FILES): build
 
 .PHONY: build
-build:
+build: wasm-pack
 	wasm-pack build --target web
+
+.PHONY: wasm-pack
+wasm-pack:
+	which $@ || cargo install $@
 
 .PHONY: clean
 clean:
