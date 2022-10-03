@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Other</title>
+<style>
+.flexcontainer {
+	display: flex;
+}
+.flexcol {
+	flex-direction: column;
+	padding: 5px;
+}
+.flexrow {
+	flex-direction: row;
+	padding: 5px;
+}
+.flexitem {
+	padding: 1em;
+}
+#links {
+	background: lightblue;
+}
+#rechts{
+	background: lightyellow;
+}
+#a{
+	background: lightpink;
+}
+#b{
+	background: lightcyan;
+}
+#c{
+	background: lightgreen;
+}
+#d{
+	background: lightgrey;
+	height: 50%;
+}
+#e{
+	background: lightgreen;
+	height: 50%;
+}
+</style>
+  </head>
+  <body>
+	  <a href="index.html">index</a>
+	  <div class="flexcontainer flexrow">
+	  <div id="links" class="flexcontainer flexcol">
+		  <p id="a" class="flexitem">oben links</p>
+		  <p id="b" class="flexitem">mitte links</p>
+		  <p id="c" class="flexitem">unten links</p>
+	  </div> 
+	  <div id="rechts" class="flexcontainer flexcol">
+		  <p id="d" class="flexitem">oben rechts</p>
+		  <p id="e" class="flexitem">unten rechts</p>
+	  </div>
+	  </div>
+  </body>
+</html>

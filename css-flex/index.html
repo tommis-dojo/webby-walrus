@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+<style>
+.flexcontainer {
+	display: flex;
+}
+.flexcol {
+	flex-direction: column;
+	padding: 1em;
+}
+.flexrow {
+	flex-direction: row;
+	padding: 1em;
+}
+#links {
+	background: lightblue;
+}
+#rechts{
+	background: lightyellow;
+}
+#a{
+	background: lightpink;
+}
+#b{
+	background: lightcyan;
+}
+#c{
+	background: lightgreen;
+}
+</style>
+  </head>
+  <body>
+	  <a href="other.html">other</a>
+	  <div class="flexcontainer flexrow">
+	  <p id="links">
+		  Links
+	  </p> 
+	  <p id="rechts">
+		  Rechts
+	  </p>
+	  </div>
+	  <div class="flexcontainer flexcol">
+	  <p id="a">
+		  Oben
+	  </p> 
+	  <p id="b">
+		  Mitte
+	  </p>
+	  <p id="c">
+		  Unten
+	  </p>
+	  </div>
+  </body>
+</html>
